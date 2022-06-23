@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url='http://localhost:5000/poem';
+const url='https://shelf-of-poems-project.herokuapp.com/poem';
 export const fetchPoems=()=>axios.get(url);
 export const createPoem = (newPoem)=> axios.post(url,newPoem);
 export const updatePoem =(id,updatedPoem) => axios.patch(`${url}/${id}`,updatedPoem);
